@@ -1,31 +1,34 @@
-export type SearchBoardRequest = {
-  keyword: string;
-  limit: 3;
-  page?: number;
-};
+import { BasePagination } from "./commonType";
 
-export type CreateBoardRequest = {
+export interface SearchBoardRequest extends BasePagination {
+  title?: string;
+  content?: string;
+  dateFrom?: string;
+  dateTo?: string;
+}
+
+export interface CreateBoardRequest {
   title: string;
   content: string;
-};
+}
 
-export type UpdateBoardRequest = {
+export interface UpdateBoardRequest {
   id: number;
   title: string;
   content: string;
-};
+}
 
-export type GetBoardsResponse = {
+export interface GetBoardsResponse {
   data: GetItems;
-};
+}
 
-export type GetItems = {
+export interface GetItems {
   items: GetBoardResponse[];
-};
+}
 
-export type GetBoardResponse = {
+export interface GetBoardResponse {
   id: number;
   title: string;
   content: string;
   createDtm?: Date;
-};
+}
