@@ -155,12 +155,13 @@ export default function BoardList() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 line-clamp-3">
-                  {board.content.length > 150
-                    ? `${board.content.substring(0, 150)}...`
+                  {board.content.length > 100
+                    ? `${board.content.substring(0, 100)}...`
                     : board.content}
                 </p>
                 <div className="mt-4">
                   <Button
+                    className="hover:bg-black hover:text-white"
                     onClick={() => handleNavigate("/" + board.id)}
                     variant="outline"
                     size="sm"
