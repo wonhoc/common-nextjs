@@ -1,0 +1,53 @@
+{
+  "name": "langraph-front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3010",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev -p 3010",
+    "dev:dev": "NODE_ENV=development next dev -p 3010",
+    "dev:prod": "NODE_ENV=production next dev -p 3010",
+    "build:dev": "NODE_ENV=development next build",
+    "build:prod": "NODE_ENV=production next build",
+    "start:dev": "NODE_ENV=development next start",
+    "start:prod": "NODE_ENV=production next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.1.15",
+    "@radix-ui/react-label": "^2.1.3",
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@radix-ui/react-switch": "^1.2.5",
+    "@tanstack/react-query": "^5.71.5",
+    "@tinymce/tinymce-react": "^6.2.1",
+    "@types/jsonwebtoken": "^9.0.10",
+    "axios": "^1.8.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.486.0",
+    "next": "15.2.4",
+    "next-auth": "^4.24.11",
+    "next-themes": "^0.4.6",
+    "object-to-formdata": "^4.5.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.0",
+    "tailwind-merge": "^3.1.0",
+    "tinymce": "^7.9.1",
+    "tw-animate-css": "^1.2.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
